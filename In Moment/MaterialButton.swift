@@ -1,5 +1,5 @@
 //
-//  MaterialView.swift
+//  MaterialButton.swift
 //  In Moment
 //
 //  Created by Stanley Pan on 2/15/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MaterialView: UIView {
+class MaterialButton: UIButton {
 
     override func awakeFromNib() {
         layer.cornerRadius = 2.0

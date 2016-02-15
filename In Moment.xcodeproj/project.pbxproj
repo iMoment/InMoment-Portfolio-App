@@ -19,6 +19,8 @@
 		91A30EF61C717FE700491BE1 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A30EF21C717FE700491BE1 /* NotoSans-Italic.ttf */; };
 		91A30EF71C717FE700491BE1 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A30EF31C717FE700491BE1 /* NotoSans-Regular.ttf */; };
 		91A30EF91C71849200491BE1 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30EF81C71849200491BE1 /* MaterialView.swift */; };
+		91A30EFC1C7185B300491BE1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30EFB1C7185B300491BE1 /* Constants.swift */; };
+		91A30EFE1C718CA100491BE1 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30EFD1C718CA100491BE1 /* MaterialButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		91A30EF21C717FE700491BE1 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		91A30EF31C717FE700491BE1 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		91A30EF81C71849200491BE1 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		91A30EFB1C7185B300491BE1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		91A30EFD1C718CA100491BE1 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		91A30EBD1C717EED00491BE1 /* In Moment */ = {
 			isa = PBXGroup;
 			children = (
+				91A30EFA1C71858C00491BE1 /* Util */,
 				91A30EEF1C717FA800491BE1 /* Resources */,
 				91A30EEE1C717F9B00491BE1 /* Model */,
 				91A30EED1C717F9100491BE1 /* View */,
@@ -150,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				91A30EF81C71849200491BE1 /* MaterialView.swift */,
+				91A30EFD1C718CA100491BE1 /* MaterialButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -170,6 +176,14 @@
 				91A30EF31C717FE700491BE1 /* NotoSans-Regular.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		91A30EFA1C71858C00491BE1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				91A30EFB1C7185B300491BE1 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,8 @@
 				91A30EF91C71849200491BE1 /* MaterialView.swift in Sources */,
 				91A30EC11C717EED00491BE1 /* ViewController.swift in Sources */,
 				91A30EBF1C717EED00491BE1 /* AppDelegate.swift in Sources */,
+				91A30EFC1C7185B300491BE1 /* Constants.swift in Sources */,
+				91A30EFE1C718CA100491BE1 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
