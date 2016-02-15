@@ -10,8 +10,10 @@
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
         </mutableArray>
         <mutableArray key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
             <string>NotoSans</string>
         </mutableArray>
     </customFonts>
@@ -108,18 +110,51 @@
                                             </mask>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-em-yyd">
-                                        <rect key="frame" x="20" y="52" width="532" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-em-yyd" customClass="MaterialTextField" customModule="In_Moment" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="64" width="520" height="35"/>
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="9Ey-3Z-eFb"/>
+                                        </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bW0-OH-P5Y" customClass="MaterialTextField" customModule="In_Moment" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="119" width="520" height="35"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="nVG-Gu-iVp"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy2-2y-LFn" customClass="MaterialButton" customModule="In_Moment" customModuleProvider="target">
+                                        <rect key="frame" x="187" y="204" width="186" height="33"/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="0XJ-3F-18g"/>
+                                            <constraint firstAttribute="width" constant="186" id="2qQ-FW-0IM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
+                                        <state key="normal" title="Login / Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="0H7-Pc-JQo"/>
+                                    <constraint firstItem="Cy2-2y-LFn" firstAttribute="centerX" secondItem="ehB-3e-coC" secondAttribute="centerX" id="8VL-1W-dom"/>
+                                    <constraint firstItem="bW0-OH-P5Y" firstAttribute="leading" secondItem="PrV-em-yyd" secondAttribute="leading" id="9zn-Mu-Gfu"/>
+                                    <constraint firstAttribute="trailing" secondItem="PrV-em-yyd" secondAttribute="trailing" constant="20" id="Log-jJ-vnW"/>
+                                    <constraint firstItem="PrV-em-yyd" firstAttribute="top" secondItem="0sU-af-gpw" secondAttribute="bottom" constant="20" id="Lyg-wb-lRk"/>
+                                    <constraint firstItem="Cy2-2y-LFn" firstAttribute="top" secondItem="bW0-OH-P5Y" secondAttribute="bottom" constant="50" id="MGz-pd-XRv"/>
+                                    <constraint firstItem="PrV-em-yyd" firstAttribute="leading" secondItem="0sU-af-gpw" secondAttribute="leading" id="REe-AL-cW5"/>
                                     <constraint firstItem="0sU-af-gpw" firstAttribute="top" secondItem="ehB-3e-coC" secondAttribute="top" constant="20" id="fZr-Jk-ZCS"/>
+                                    <constraint firstItem="bW0-OH-P5Y" firstAttribute="trailing" secondItem="PrV-em-yyd" secondAttribute="trailing" id="kuP-vY-9c6"/>
+                                    <constraint firstItem="bW0-OH-P5Y" firstAttribute="top" secondItem="PrV-em-yyd" secondAttribute="bottom" constant="20" id="oWm-P4-EjM"/>
                                     <constraint firstItem="0sU-af-gpw" firstAttribute="leading" secondItem="ehB-3e-coC" secondAttribute="leading" constant="20" id="oh5-WS-gxF"/>
                                 </constraints>
                                 <variation key="default">

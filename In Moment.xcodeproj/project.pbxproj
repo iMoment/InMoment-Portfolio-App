@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64AA3AE014E61BE0A14344BD /* Pods_In_Moment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC34076222D1D1F5FFF1971 /* Pods_In_Moment.framework */; };
 		91A30EBF1C717EED00491BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30EBE1C717EED00491BE1 /* AppDelegate.swift */; };
 		91A30EC11C717EED00491BE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30EC01C717EED00491BE1 /* ViewController.swift */; };
 		91A30EC41C717EED00491BE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A30EC21C717EED00491BE1 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		91A30EFC1C7185B300491BE1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30EFB1C7185B300491BE1 /* Constants.swift */; };
 		91A30EFE1C718CA100491BE1 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30EFD1C718CA100491BE1 /* MaterialButton.swift */; };
 		91A30F001C7194E200491BE1 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30EFF1C7194E200491BE1 /* MaterialTextField.swift */; };
+		91A30F051C719F2C00491BE1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A30F021C719F2C00491BE1 /* Bolts.framework */; };
+		91A30F061C719F2C00491BE1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A30F031C719F2C00491BE1 /* FBSDKCoreKit.framework */; };
+		91A30F071C719F2C00491BE1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A30F041C719F2C00491BE1 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D09CA006CE2E363811D474B /* Pods-In Moment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In Moment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-In Moment/Pods-In Moment.debug.xcconfig"; sourceTree = "<group>"; };
+		4EC34076222D1D1F5FFF1971 /* Pods_In_Moment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_In_Moment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DCB4BAF2AE2946C319D0D07 /* Pods-In Moment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In Moment.release.xcconfig"; path = "Pods/Target Support Files/Pods-In Moment/Pods-In Moment.release.xcconfig"; sourceTree = "<group>"; };
 		91A30EBB1C717EED00491BE1 /* In Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "In Moment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A30EBE1C717EED00491BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91A30EC01C717EED00491BE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +70,9 @@
 		91A30EFB1C7185B300491BE1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		91A30EFD1C718CA100491BE1 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		91A30EFF1C7194E200491BE1 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		91A30F021C719F2C00491BE1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		91A30F031C719F2C00491BE1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		91A30F041C719F2C00491BE1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A30F051C719F2C00491BE1 /* Bolts.framework in Frameworks */,
+				91A30F061C719F2C00491BE1 /* FBSDKCoreKit.framework in Frameworks */,
+				91A30F071C719F2C00491BE1 /* FBSDKLoginKit.framework in Frameworks */,
+				64AA3AE014E61BE0A14344BD /* Pods_In_Moment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10459EC25832BC9F457C68CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D09CA006CE2E363811D474B /* Pods-In Moment.debug.xcconfig */,
+				7DCB4BAF2AE2946C319D0D07 /* Pods-In Moment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6FED48D716604D3DC985A3E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EC34076222D1D1F5FFF1971 /* Pods_In_Moment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		91A30EB21C717EED00491BE1 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +128,8 @@
 				91A30ED21C717EEE00491BE1 /* In MomentTests */,
 				91A30EDD1C717EEE00491BE1 /* In MomentUITests */,
 				91A30EBC1C717EED00491BE1 /* Products */,
+				10459EC25832BC9F457C68CC /* Pods */,
+				6FED48D716604D3DC985A3E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +146,7 @@
 		91A30EBD1C717EED00491BE1 /* In Moment */ = {
 			isa = PBXGroup;
 			children = (
+				91A30F011C719EF900491BE1 /* Frameworks */,
 				91A30EFA1C71858C00491BE1 /* Util */,
 				91A30EEF1C717FA800491BE1 /* Resources */,
 				91A30EEE1C717F9B00491BE1 /* Model */,
@@ -189,6 +223,16 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		91A30F011C719EF900491BE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91A30F021C719F2C00491BE1 /* Bolts.framework */,
+				91A30F031C719F2C00491BE1 /* FBSDKCoreKit.framework */,
+				91A30F041C719F2C00491BE1 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91A30EE31C717EEE00491BE1 /* Build configuration list for PBXNativeTarget "In Moment" */;
 			buildPhases = (
+				D68D6D8FF682AAF858460944 /* Check Pods Manifest.lock */,
 				91A30EB71C717EED00491BE1 /* Sources */,
 				91A30EB81C717EED00491BE1 /* Frameworks */,
 				91A30EB91C717EED00491BE1 /* Resources */,
+				5BA72672772EE36C9AB3A83F /* Embed Pods Frameworks */,
+				667880A4928D242184882BBA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +368,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BA72672772EE36C9AB3A83F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-In Moment/Pods-In Moment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		667880A4928D242184882BBA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-In Moment/Pods-In Moment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68D6D8FF682AAF858460944 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91A30EB71C717EED00491BE1 /* Sources */ = {
@@ -472,10 +567,17 @@
 		};
 		91A30EE41C717EEE00491BE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D09CA006CE2E363811D474B /* Pods-In Moment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/\"In Moment\"",
+				);
 				INFOPLIST_FILE = "In Moment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.iMoment.In-Moment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -483,10 +585,17 @@
 		};
 		91A30EE51C717EEE00491BE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DCB4BAF2AE2946C319D0D07 /* Pods-In Moment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/\"In Moment\"",
+				);
 				INFOPLIST_FILE = "In Moment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.iMoment.In-Moment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -559,6 +668,7 @@
 				91A30EE51C717EEE00491BE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91A30EE61C717EEE00491BE1 /* Build configuration list for PBXNativeTarget "In MomentTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +677,7 @@
 				91A30EE81C717EEE00491BE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91A30EE91C717EEE00491BE1 /* Build configuration list for PBXNativeTarget "In MomentUITests" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +686,7 @@
 				91A30EEB1C717EEE00491BE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
