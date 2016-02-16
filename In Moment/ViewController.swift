@@ -69,7 +69,11 @@ class ViewController: UIViewController {
                                 self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                             }
                         })
+                    } else {
+                        self.showErrorAlert("Could not login", msg: "Please check your email address or password.")
                     }
+                } else {
+                    self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 }
             })
         } else {
