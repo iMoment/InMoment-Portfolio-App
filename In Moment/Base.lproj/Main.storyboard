@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="245" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--FeedVC-->
         <scene sceneID="nBM-Uc-1yH">
             <objects>
-                <viewController id="jgO-lF-a74" sceneMemberID="viewController">
+                <viewController id="jgO-lF-a74" customClass="FeedVC" customModule="In_Moment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iLS-Qj-LTY"/>
                         <viewControllerLayoutGuide type="bottom" id="aJS-Bb-pkT"/>
@@ -210,21 +210,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="358" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-9X-3i2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="358" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-9X-3i2">
                                 <rect key="frame" x="20" y="64" width="560" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="358" id="F79-dH-vPB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="358" id="F79-dH-vPB" customClass="PostCell" customModule="In_Moment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="560" height="358"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F79-dH-vPB" id="IrN-Dx-sGH">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="357.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="358"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-Fy-hqp" userLabel="Container">
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-Fy-hqp" userLabel="Container" customClass="MaterialView" customModule="In_Moment" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="8" width="560" height="341.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yxr-th-TD1">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yxr-th-TD1">
                                                             <rect key="frame" x="78" y="8" width="320" height="326"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iN7-42-Ivs">
@@ -265,17 +265,20 @@
                                                                         </stackView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iox-36-yBg">
-                                                                    <rect key="frame" x="0.0" y="50" width="320" height="70"/>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iox-36-yBg">
+                                                                    <rect key="frame" x="0.0" y="55" width="320" height="70"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="QEF-8U-Z77"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                                                 </textView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Screen" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-L7-ciM">
-                                                                    <rect key="frame" x="0.0" y="120" width="320" height="206"/>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Screen" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-L7-ciM">
+                                                                    <rect key="frame" x="0.0" y="130" width="320" height="196"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <constraints>
@@ -297,12 +300,16 @@
                                                 <constraint firstItem="Z0p-Fy-hqp" firstAttribute="bottom" secondItem="IrN-Dx-sGH" secondAttribute="bottomMargin" id="nKq-bu-Kh0"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="profileImage" destination="zpo-bZ-Yap" id="Qah-F1-Ulq"/>
+                                            <outlet property="showcaseImage" destination="lZR-L7-ciM" id="NCe-XS-QU8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hsj-9X-3i2" firstAttribute="leading" secondItem="9rm-XP-rdP" secondAttribute="leadingMargin" id="BWX-ML-xEh"/>
                             <constraint firstItem="hsj-9X-3i2" firstAttribute="top" secondItem="iLS-Qj-LTY" secondAttribute="bottom" id="LQ0-se-eCu"/>
@@ -311,6 +318,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sNR-jG-LMU"/>
+                    <connections>
+                        <outlet property="tableView" destination="hsj-9X-3i2" id="kfk-wS-te6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4i-jA-AVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -324,6 +334,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aKf-YV-Dyv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
