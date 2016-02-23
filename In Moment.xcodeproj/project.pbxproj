@@ -29,6 +29,7 @@
 		91A30F051C719F2C00491BE1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A30F021C719F2C00491BE1 /* Bolts.framework */; };
 		91A30F061C719F2C00491BE1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A30F031C719F2C00491BE1 /* FBSDKCoreKit.framework */; };
 		91A30F071C719F2C00491BE1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A30F041C719F2C00491BE1 /* FBSDKLoginKit.framework */; };
+		91C4AA871C7B115700B53322 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C4AA861C7B115700B53322 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		91A30F021C719F2C00491BE1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		91A30F031C719F2C00491BE1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		91A30F041C719F2C00491BE1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		91C4AA861C7B115700B53322 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 		91A30EEE1C717F9B00491BE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91C4AA861C7B115700B53322 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				91A30EBF1C717EED00491BE1 /* AppDelegate.swift in Sources */,
 				91A30EFC1C7185B300491BE1 /* Constants.swift in Sources */,
 				91A30EFE1C718CA100491BE1 /* MaterialButton.swift in Sources */,
+				91C4AA871C7B115700B53322 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
