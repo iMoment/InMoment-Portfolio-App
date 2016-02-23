@@ -12,6 +12,10 @@ class PostCell: UITableViewCell {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var showcaseImage: UIImageView!
+    @IBOutlet weak var descriptionText: UITextView!
+    @IBOutlet weak var likesLabel: UILabel!
+    
+    var post: Post!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,10 +29,9 @@ class PostCell: UITableViewCell {
         showcaseImage.clipsToBounds = true
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(post: Post) {
+        self.post = post
+        self.descriptionText.text = post.postDescription
+        self.likesLabel.text = "\(post.likes)"
     }
-
 }
