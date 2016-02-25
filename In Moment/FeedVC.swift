@@ -16,7 +16,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var postField: MaterialTextField!
     @IBOutlet weak var imageSelectorPreview: UIImageView!
+    
     var posts = [Post]()
+    var imageSelected = false
     var imagePicker: UIImagePickerController!
     
     static var imageCache = NSCache()
@@ -89,6 +91,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         imageSelectorPreview.image = image
+        imageSelected = true
     }
     
     @IBAction func selectImage(sender: UITapGestureRecognizer) {
@@ -96,8 +99,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     }
     
     @IBAction func makePost(sender: AnyObject) {
+        
         if let txt = postField.text where txt != "" {
-            if let img = imageSelectorPreview.image {
+            
+            if let img = imageSelectorPreview.image where imageSelected == true {
                 let urlStr = "https://post.imageshack.us/upload_api.php"
                 let url = NSURL(string: urlStr)!
                 let imgData = UIImageJPEGRepresentation(img, 0.2)!
@@ -121,28 +126,42 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
                                     if let links = info["links"] as? Dictionary<String, AnyObject> {
                                         if let imgLink = links["image_link"] as? String {
                                             print("LINK: \(imgLink)")
+                                            self.postToFirebase(imgLink)
                                         }
                                     }
                                 }
 
                             })
-//                                if let info = result.value as? Dictionary<String, AnyObject> {
-//                                    
-//                                    if let links = info["links"] as? Dictionary<String, AnyObject> {
-//                                        if let imgLink = links["image_link"] as? String {
-//                                            print("LINK: \(imgLink)")
-//                                        }
-//                                    }
-//                                }
-//                            })
                         case .Failure(let error):
                             print(error)
                         }
                 }
+            } else {
+                self.postToFirebase(nil)
             }
         }
     }
+    
+    func postToFirebase(imgUrl: String?) {
+        var post: Dictionary<String, AnyObject> = [
+            "description": postField.text!,
+            "likes": 0
+        ]
+        
+        if imgUrl != nil {
+            post["imageUrl"] = imgUrl!
+        }
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        postField.text = ""
+        
+    }
 }
+
+
+
 
 
 
