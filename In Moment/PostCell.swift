@@ -55,6 +55,8 @@ class PostCell: UITableViewCell {
         } else {
             self.showcaseImage.hidden = true
         }
+        
+        let likeReference = DataService.ds.REF_USER_CURRENT.childByAppendingPath("likes")
     }
 }
 

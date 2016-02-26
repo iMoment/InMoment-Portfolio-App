@@ -119,7 +119,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
                         
                         switch encodingResult {
                         case .Success(let upload, _, _):
-                            //upload.responseJSON(completionHandler: { request, response, result in
+                            
                             upload.responseJSON(completionHandler: { response in
                                 if let info = response.result.value as? Dictionary<String, AnyObject> {
                                     
@@ -156,7 +156,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
         firebasePost.setValue(post)
         
         postField.text = ""
+        imageSelectorPreview.image = UIImage(named: "camera")
+        imageSelected = false
         
+        tableView.reloadData()
     }
 }
 
