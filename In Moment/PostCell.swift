@@ -25,6 +25,10 @@ class PostCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        let tap = UITapGestureRecognizer(target: self, action: "likeTapped:")
+        tap.numberOfTapsRequired = 1
+        likeImage.addGestureRecognizer(tap)
+        likeImage.userInteractionEnabled = true
     }
 
     override func drawRect(rect: CGRect) {
@@ -67,6 +71,22 @@ class PostCell: UITableViewCell {
                 self.likeImage.image = UIImage(named: "Heart Empty")
             } else {
                 self.likeImage.image = UIImage(named: "Heart Full")
+            }
+        })
+    }
+    
+    func likeTapped(sender: UITapGestureRecognizer) {
+        likeReference.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            
+            if let doesNotExist = snapshot.value as? NSNull {
+                self.likeImage.image = UIImage(named: "Heart Full")
+                self.post.adjustLikes(true)
+                self.likeReference.setValue(true)
+                
+            } else {
+                self.likeImage.image = UIImage(named: "Heart Empty")
+                self.post.adjustLikes(false)
+                self.likeReference.removeValue()
             }
         })
     }
