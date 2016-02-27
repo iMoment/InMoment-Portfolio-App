@@ -28,8 +28,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
         
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.estimatedRowHeight = 358
+        
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         
@@ -38,6 +38,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
             print(snapshot.value)
             
             self.posts = []
+            
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
                 for snap in snapshots {
                     print("SNAP: \(snap)")
@@ -62,6 +63,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let post = posts[indexPath.row]
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
@@ -79,6 +81,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
         let post = posts[indexPath.row]
 
         if post.imageUrl == nil {

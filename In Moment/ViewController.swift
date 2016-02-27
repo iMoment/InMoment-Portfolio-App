@@ -17,7 +17,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -29,6 +28,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func facebookButtonPressed(sender: UIButton!) {
+        
         let facebookLogin = FBSDKLoginManager()
         
         facebookLogin.logInWithReadPermissions(["email"]) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError: NSError!) -> Void in
@@ -58,13 +58,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func attemptLogin(sender: UIButton!) {
+        
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
             DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { error, authData in
+                
                 if error != nil {
                     print(error)
                     
                     if error.code == STATUS_ACCOUNT_NONEXISTENT {
                         DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result in
+                            
                             if error != nil {
                                 self.showErrorAlert("Could not create account", msg: "There was an error creating this account. Please try again.")
                             } else {
